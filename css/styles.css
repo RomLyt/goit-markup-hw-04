@@ -107,9 +107,6 @@ img{
 .nav-head {
     display: flex;
 }
-.navigation .item {
-
-}
 .navigation .item:not(:last-child) {
     margin-right: 40px;
 }
@@ -132,9 +129,6 @@ img{
 }
 .current {
     color: var(--accent-color);
-}
-.current::after {
-    
 }
 
 .contacts {
@@ -212,7 +206,17 @@ img{
 .feature .element:not(:last-child){
     margin-right: 24px;
 }
+.element-icon{
+    display: flex;
+    margin-bottom: 8px;
+    width: 264px;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    background: #F4F4FD;
+    border-radius: 4px;
 
+}
 .feature-title {
     margin-top: 0;
     margin-bottom: 8px;
@@ -304,6 +308,7 @@ img{
     padding: 0;
 }
 .social-icon {
+    fill: var(--second-white-color)
     
 
 }
@@ -315,8 +320,11 @@ img{
     height: 40px;
     background-color: var(--accent-color);
     border-radius: 50%;
-
 }
+.social-block:hover {
+    background-color: var(--hover-color)
+}
+
 
 /* Customers */
 .client-cont{
@@ -344,42 +352,28 @@ img{
 .client-logo{
     width: 168px;
     height: 88px;
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 16px 32px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
 }
-.yaco{
-    background-image: url(../images/customers/Client\ 1.svg);
-}
-.tagline{
-    background-image: url(../images/customers/Client\ 2.svg);
-}
-.company{
-    background-image: url(../images/customers/Client\ 3.svg);
-}
-.foster{
-    background-image: url(../images/customers/Client\ 4.svg);
-}
-.brand{
-    background-image: url(../images/customers/Client\ 5.svg);
-}
-.tag-line{
-    background-image: url(../images/customers/Client\ 6.svg);
-}
+
 
 /* Footer */
 footer {
     padding-top: 100px;
     padding-bottom: 100px;
-    /* властивість для фону на певний час */
-    background-color: #2E2F42;
+    background-color: var(--primary-text);
 }
 div.foorer.container {
     width: 264px;
     height: 110px;
 
+}
+.footer{
+    display: flex;
 }
 
 .footer-text {
@@ -393,8 +387,41 @@ div.foorer.container {
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 16px;
+}
+.footer-media{
+    display: block;
+    margin-left: 120px;
+}
+.social-media{
+    margin-top: 0;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-style: 16px;
+    line-height: 1.5;
+    color: var(--white-text);
 
 }
+.footer-action{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 24px;
+}
+.footer-link{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: block;
+    border: none;
+    height: 40px;
+    fill: var(--second-white-color)
+}
+.footer-icon{
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+    fill: var(--second-white-color)
+}
+
 
 /* ***** Portfolio page ***** */
 
