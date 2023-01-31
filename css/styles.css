@@ -133,6 +133,9 @@ img{
 .current {
     color: var(--accent-color);
 }
+.current::after {
+    
+}
 
 .contacts {
     padding-left: 0;
@@ -161,11 +164,16 @@ img{
 
 /* HERO */
 .hero {
+    width: 1440px;
+    height: 600px;
     padding: 188px 0px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    
-    /* властивість для фону на певний час */
-    background-color: var(--primary-text);
+    background-color: rgba(46, 47, 66, 0.7);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-position: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .hero-title {
     margin-top: 0;
@@ -204,6 +212,7 @@ img{
 .feature .element:not(:last-child){
     margin-right: 24px;
 }
+
 .feature-title {
     margin-top: 0;
     margin-bottom: 8px;
@@ -213,6 +222,7 @@ img{
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
+
 .feature-text {
     margin: 0;
     
@@ -263,7 +273,7 @@ img{
     margin-right: 24px;
 }
 .team-title {
-        margin-bottom: 72px;
+    margin-bottom: 72px;
 
     font-weight: 700;
     font-size: 36px;
@@ -287,7 +297,76 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text);
-    margin: 0;
+    margin: 0px 0px 8px 0px;
+}
+.team-social{
+    display: flex;
+    padding: 0;
+}
+.social-icon {
+    
+
+}
+.social-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+
+}
+
+/* Customers */
+.client-cont{
+    padding-top: 130px;
+    padding-bottom: 120px;
+
+}
+.client-top{
+    margin-top: 0;
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-text);
+    opacity: 0.3;
+}
+.client-list{
+    display: flex;
+    padding: 0;    
+    gap: 24px;
+}
+.client-logo{
+    width: 168px;
+    height: 88px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+}
+.yaco{
+    background-image: url(../images/customers/Client\ 1.svg);
+}
+.tagline{
+    background-image: url(../images/customers/Client\ 2.svg);
+}
+.company{
+    background-image: url(../images/customers/Client\ 3.svg);
+}
+.foster{
+    background-image: url(../images/customers/Client\ 4.svg);
+}
+.brand{
+    background-image: url(../images/customers/Client\ 5.svg);
+}
+.tag-line{
+    background-image: url(../images/customers/Client\ 6.svg);
 }
 
 /* Footer */
