@@ -342,7 +342,6 @@ img{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primary-text);
-    opacity: 0.3;
 }
 .client-list{
     display: flex;
@@ -359,6 +358,19 @@ img{
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
+.client-logo:focus,
+.client-logo:hover{
+    border: 1px solid var(--hover-color);
+    border-radius: 4px;
+}
+.client-icon{
+    fill: #8E8F99;
+}
+.client-icon:focus,
+.client-icon:hover{
+    fill: var(--hover-color);
+}
+
 
 
 /* Footer */
@@ -408,12 +420,18 @@ div.foorer.container {
     gap: 24px;
 }
 .footer-link{
+    align-items: center;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: block;
     border: none;
     height: 40px;
     fill: var(--second-white-color)
+}
+.footer-link:focus,
+.footer-link:hover{
+    background: #31D0AA;
 }
 .footer-icon{
     width: 24px;
